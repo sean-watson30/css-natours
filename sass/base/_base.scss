@@ -1,0 +1,16 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* font-size: 10px; */
+  /* if we set it here hard-coded px, it will override user preferences, etc
+  sicne default is 16px, if we want 10px, we can do the % of that as our html setting and it will still make eevrything responsve. */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
