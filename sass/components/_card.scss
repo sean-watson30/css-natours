@@ -35,6 +35,9 @@
 
   &:hover &__side--front {
     transform: rotateY(-180deg);
+    // 
+    // transform-origin: left;
+    // 
   }
   &:hover &__side--back {
     transform: rotateY(0);
