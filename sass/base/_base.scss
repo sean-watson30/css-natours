@@ -8,7 +8,20 @@ html {
   /* font-size: 10px; */
   /* if we set it here hard-coded px, it will override user preferences, etc
   sicne default is 16px, if we want 10px, we can do the % of that as our html setting and it will still make eevrything responsve. */
-  font-size: 62.5%;
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+  
+  // @include respond(phone) {
+  //   font-size: 50%;
+  // }
+  @include respond(tab-land) { // width < 1200px
+    font-size: 56.25%; // 1rem = 9px; 9/16 = 56.25%
+  }
+  @include respond(tab-port) { // width < 900px
+    font-size: 50%; // 1rem = 8px; 8/16 = 50%
+  }
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px; 12/16 = 75%
+  }
 }
 
 body {
