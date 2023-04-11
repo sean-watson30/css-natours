@@ -31,6 +31,8 @@
 // - tab-land
 // - big desktop
 
+// ORDER: base/typography > general layout/grid > page layout > components
+
 // 1em = 16px ... em works best for media query defaults, since the default font size we specififed doesn't apply here....
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
