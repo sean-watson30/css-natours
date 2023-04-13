@@ -9,6 +9,13 @@
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
+  
+  // use @supports to say if this thign is supoorted, then apply this code, if not use what's specified above. Useful for graceful degredation
+  @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, .3);
+  }
 
   &__content {
     @include absCenter;
